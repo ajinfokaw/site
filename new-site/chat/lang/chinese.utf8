@@ -1,0 +1,127 @@
+<?php 
+
+/* Chinese */
+
+$lang=array();
+
+$lang['ok']           = '- 確定 -';
+$lang['reset']        = '重新';
+$lang['on']           = '開啟';
+$lang['off']          = '關閉';
+$lang['yes']          = '是';
+$lang['no']           = '否';
+$lang['all']          = '全部';
+$lang['login']        = '登入';
+$lang['exitt']        = '登出';
+$lang['edit']         = '編輯';
+$lang['delete']       = '刪除';
+$lang['desc']         = '敘述';
+$lang['name']         = '名稱';
+$lang['password']     = '密碼';
+$lang['old_pass']     = '舊密碼';
+$lang['new_pass']     = '新密碼';
+$lang['forgot_pass']  = '忘記密碼';
+$lang['register']     = '登錄';
+$lang['ban']          = '禁止';
+$lang['profile']      = '簡介';
+$lang['mail']         = '電子信箱';
+$lang['room']         = '個人聊天室';
+$lang['rooms']        = '多人聊天室';
+$lang['online']       = '線上';
+$lang['sound']        = '聲音';
+$lang['smilies']      = '表情符號';
+$lang['color']        = '顏色';
+$lang['turing']       = '帳號';
+$lang['verification'] = '確認';
+$lang['code']         = '編碼';
+$lang['suffix']       = '字串';
+$lang['timezone']     = '時區';
+$lang['time_format']  = '時間格式';
+$lang['age']          = '年齡';
+$lang['fun']          = '興趣';
+$lang['sex']          = '性別';
+$lang['male']         = '男';
+$lang['female']       = '女';
+$lang['location']     = '本地';
+$lang['website']      = '網址';
+$lang['info']         = '資訊';
+$lang['choose']       = '選項';
+$lang['upload']       = '上傳';
+$lang['lang']         = '語言';
+$lang['user']         = '使用者';
+$lang['users']        = '使用群';
+$lang['activation']   = '同意';
+$lang['header']       = '首';
+$lang['footer']       = '尾';
+$lang['title']        = '標題';
+$lang['join']         = '加入';
+$lang['status']       = '狀態';
+$lang['active']       = '繼續';
+$lang['inactive']     = '取消';
+$lang['unverified']   = '未認證';
+$lang['order']        = '訂閱';
+$lang['no_results']   = '不符合';
+$lang['integration']  = '完成';
+$lang['history']      = '歷史';
+$lang['badwords']     = '錯誤字句';
+$lang['mail_tmpl']    = '郵件範例';
+$lang['backup']       = '備份 [使用者]';
+$lang['admin']        = '管理人員';
+$lang['moderator']    = '裁定';
+$lang['settings']     = '設定';
+$lang['inf_pmssg']    = '傳訊';
+$lang['guest']        = '訪客';
+$lang['remember']     = '存記';
+$lang['6_hours']      = '6小時';
+$lang['a_day']        = '1天';
+$lang['a_week']       = '1週';
+$lang['a_month']      = '1月';
+$lang['a_year']       = '1年';
+$lang['mass']         = '在此設定群組...';
+$lang['clear_ban']    = '清除禁止的帳號名單';
+$lang['ban_ip']       = '禁止該IP';
+$lang['suspend_acc']  = '終止該帳號';
+$lang['max_users']    = '目前有太多人使用聊天功能，請稍作等待後重新登入此畫面';
+$lang['open_new']     = '在新視窗開啟畫面';
+$lang['confirm']      = '請確認此動作';
+$lang['wrong']        = '輸入錯誤';
+$lang['account_ok']   = '您的帳號已經可以使用';
+$lang['check_inbox']  = '請確認您的信箱';
+$lang['wait_app']     = '您的帳號已經完成申請，請等待管理人員審核之後方能使用';
+$lang['all_req']      = '全選!';
+$lang['you_banned']   = '您已被列為禁止登入';
+$lang['headers_sent'] = '標頭已設定.';
+$lang['wrong_turing'] = '錯誤的帳號';
+$lang['mail_error']   = '郵件伺服器錯誤';
+$lang['action_ok']    = '操作已經成功完成';
+$lang['continue']     = '按此鍵繼續';
+$lang['revalidate']   = '電子郵件信箱待確認!';
+$lang['bwordsedit']   = '為編輯該段 <i>badwords.txt</i> 必須CHMODed 至 666.';
+$lang['upload_err']   = '上傳失敗. 可能是檔案過大';
+$lang['error_ip']     = '此使用者不在線上,此為您個人之帳號或已經被禁止的帳號位置.';
+$lang['error_usr']    = '無此使用者,此為您個人之帳號或訪客帳號.';
+$lang['error_bro']    = '您的瀏覽器不支援! <br /><br /> 請至少更新至MSIE 5.0, Opera 8.5 或 Mozilla 1.0版本.<br /> 最新版的 Safari 與 Konqueror 也同樣支援本系統.';
+$lang['error_nop']    = '您無權登入此頁面';
+$lang['error_lnk']    = '您的電腦似乎不允許在一個新畫面開啟連結';
+$lang['error_unk']    = '<b>不明的錯誤!</b><br /><br />';
+$lang['sett1']        = '列印登入的 \'訪客\' 使用者名稱/密碼 . 更改密碼並對未經許可之訪客關閉該功能';
+$lang['sett2']        = '同意信件要求. [A] 意味著新使用者無法登入，直到他們的帳號被手動核可';
+$lang['sett3']        = '概括同意所有支援此項功能之瀏覽器. [A] 意味著所有可接受 MSIE之瀏覽器';
+$lang['sett4']        = '每個聊天室的使用群 [MAX].';
+$lang['sett5']        = '上傳圖片時最大檔案規格是幾kB. OFF 意味著不允許上傳圖片';
+$lang['sett6']        = '帳號保護措施以避免自動化的攻擊';
+$lang['sett7']        = '將於**分鐘後帳號到期';
+
+/* 3.1 update */
+
+$lang['disconnect']   = 'You have been disconnected. [Reason: no response from the server, request sent 30 seconds ago.]';
+$lang['error_nan']    = 'You have been disconnected. [Reason: the latest server response was lost or broken (0 bytes).]';
+
+/* 3.2 update */
+
+$lang['retype']       = 'Retype';
+$lang['suspend']      = 'Suspend';
+$lang['empty']        = 'Empty';
+$lang['empty_all']    = 'Empty all rooms';
+
+?>

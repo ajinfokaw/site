@@ -1,0 +1,127 @@
+<?php 
+
+/* Swedish */
+
+$lang=array();
+
+$lang['ok']           = '- OK -';
+$lang['reset']        = ' Nollställ ';
+$lang['on']           = 'På';
+$lang['off']          = 'Av';
+$lang['yes']          = 'Ja';
+$lang['no']           = 'Nej';
+$lang['all']          = 'Alla';
+$lang['login']        = 'Logga in';
+$lang['exitt']        = 'Logga ut';
+$lang['edit']         = 'Ändra';
+$lang['delete']       = 'Ta bort';
+$lang['desc']         = 'Beskrivning';
+$lang['name']         = 'Namn';
+$lang['password']     = 'Lösenord';
+$lang['old_pass']     = 'Gammalt lösen';
+$lang['new_pass']     = 'Nytt lösen';
+$lang['forgot_pass']  = 'Glöm lösenord';
+$lang['register']     = 'Registrera';
+$lang['ban']          = 'Ban';
+$lang['profile']      = 'Profil';
+$lang['mail']         = 'E-mail';
+$lang['room']         = 'Rum';
+$lang['rooms']        = 'Rum';
+$lang['online']       = 'Online';
+$lang['sound']        = 'Ljud';
+$lang['smilies']      = 'Smilies';
+$lang['color']        = 'Färger';
+$lang['turing']       = 'Acc. nummer';
+$lang['verification'] = 'Verifikation';
+$lang['code']         = 'Kod';
+$lang['suffix']       = 'Suffix';
+$lang['timezone']     = 'Tidszon';
+$lang['time_format']  = 'Format';
+$lang['age']          = 'Ålder';
+$lang['fun']          = 'Kul';
+$lang['sex']          = 'Kön';
+$lang['male']         = 'Man';
+$lang['female']       = 'Kvinna';
+$lang['location']     = 'Plats';
+$lang['website']      = 'Websida';
+$lang['info']         = 'Info';
+$lang['choose']       = 'Välj';
+$lang['upload']       = 'Ladda upp';
+$lang['lang']         = 'Språk';
+$lang['user']         = 'Användare';
+$lang['users']        = 'Användare';
+$lang['activation']   = 'Aktivering';
+$lang['header']       = 'Huvud';
+$lang['footer']       = 'Fot';
+$lang['title']        = 'Titel';
+$lang['join']         = 'Anslöt';
+$lang['status']       = 'Status';
+$lang['active']       = 'Normal';
+$lang['inactive']     = 'Inaktiverad';
+$lang['unverified']   = 'Ej verifierad';
+$lang['order']        = 'Sortera';
+$lang['no_results']   = 'Inga träffar...';
+$lang['integration']  = 'Integration';
+$lang['history']      = 'Historik';
+$lang['badwords']     = 'Fula ord';
+$lang['mail_tmpl']    = 'Mail, mall';
+$lang['backup']       = 'Backup [Användare]';
+$lang['admin']        = 'Admin';
+$lang['moderator']    = 'Moderator';
+$lang['settings']     = 'Inställningar';
+$lang['inf_pmssg']    = 'Info / Viska';
+$lang['guest']        = 'Gäst';
+$lang['remember']     = 'Kom ihåg';
+$lang['6_hours']      = '6 timmar';
+$lang['a_day']        = '1 dag';
+$lang['a_week']       = '1 vecka';
+$lang['a_month']      = '1 månad';
+$lang['a_year']       = '1 år';
+$lang['mass']         = 'Välja mångaktivitet här...';
+$lang['clear_ban']    = 'Töm banade IP listan';
+$lang['ban_ip']       = 'Ban denna IP för';
+$lang['suspend_acc']  = 'Stäng detta konto';
+$lang['max_users']    = 'För många användare chattar... Vänta några minuter och ladda sedan om sidan.';
+$lang['open_new']     = 'Öppna denna bild i ett nytt fönster...';
+$lang['confirm']      = 'Bekräfta denna aktivitet...';
+$lang['wrong']        = 'Felaktig aktivitet.';
+$lang['account_ok']   = 'Ditt konto har aktiverats.';
+$lang['check_inbox']  = 'Se din inbox.';
+$lang['wait_app']     = 'Ditt konto har skapats men det är ännu inaktiverat. Aktivering av admin krävs...';
+$lang['all_req']      = 'Alla fält måste fyllas i!';
+$lang['you_banned']   = 'Du har blivit bannad!';
+$lang['headers_sent'] = 'Huvud already sent.';
+$lang['wrong_turing'] = 'Felaktigt acc. nummer.';
+$lang['mail_error']   = 'Mail server fel.';
+$lang['action_ok']    = 'Den efterfrågade operationen har slutförts.';
+$lang['continue']     = 'Klicka här för att fortsätta...';
+$lang['revalidate']   = 'E-mail måste bli bekräftad!';
+$lang['bwordsedit']   = 'För att ändra denna listan <i>badwords.txt</i> måste den bli CHMODed till 666.';
+$lang['upload_err']   = 'Uppladdningsfel. Troligen för stor fil...';
+$lang['error_ip']     = 'Användaren är inte online, det är din egen IP eller en redan bannad IP-address.';
+$lang['error_usr']    = 'Inga användare, det är ditt eget konto eller ett gästkonto.';
+$lang['error_bro']    = 'Din webläsare stöds ej! <br /><br /> Uppgradera till MSIE 5.0, Opera 8.5 eller Mozilla 1.0.<br /> Senaste verisioner av Safari och Konqueror stöds också.';
+$lang['error_nop']    = 'Du har inte tillåtelse att visa vald sida...';
+$lang['error_lnk']    = 'Verkar som att du försökt öppna en länk i ett nytt fönster, vilket inte är tillåtet.';
+$lang['error_unk']    = '<b>Unknown error!</b><br /><br />';
+$lang['sett1']        = 'Ange \'guest\' användarnamn/lösen vid inoggning. Ändra lösen och stäng av inställningen för att inte tillåta gäster.';
+$lang['sett2']        = 'Aktivering via mail krävs. [A] Betyder att nya användare inte kan tillträda förren deras konto godkänts manuellt.';
+$lang['sett3']        = 'Kompression aktiverat för alla webläsare som hanterar det. [A] Alla webläsare utom MSIE.';
+$lang['sett4']        = 'Användare per rum [MAX].';
+$lang['sett5']        = 'Maxiamal storlek på filer vid uppladdning av foto i kB. AV betyder att foto ej tillåts.';
+$lang['sett6']        = 'Acc. nummer skyddar mot automatiska attacker.';
+$lang['sett7']        = 'Acc. nummer förfaller i ** minuter.';
+
+/* 3.1 update */
+
+$lang['disconnect']   = 'You have been disconnected. [Reason: no response from the server, request sent 30 seconds ago.]';
+$lang['error_nan']    = 'You have been disconnected. [Reason: the latest server response was lost or broken (0 bytes).]';
+
+/* 3.2 update */
+
+$lang['retype']       = 'Retype';
+$lang['suspend']      = 'Suspend';
+$lang['empty']        = 'Empty';
+$lang['empty_all']    = 'Empty all rooms';
+
+?>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="downloads/jkawflex GNFe-3.41-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="downloads/jkawflex-0.0.20.jar"/>
+	<classpathentry kind="lib" path="downloads/jkawflex-3.45-SNAPSHOT.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,127 @@
+<?php 
+
+/* Czech */
+
+$lang=array();
+
+$lang['ok']           = '- OK -';
+$lang['reset']        = ' Reset ';
+$lang['on']           = 'On';
+$lang['off']          = 'Off';
+$lang['yes']          = 'Ano';
+$lang['no']           = 'Ne';
+$lang['all']          = 'Vše';
+$lang['login']        = 'Přihlášení';
+$lang['exitt']        = 'Odhlášení';
+$lang['edit']         = 'Editace';
+$lang['delete']       = 'Vymazat';
+$lang['desc']         = 'Popis';
+$lang['name']         = 'Jméno';
+$lang['password']     = 'Heslo';
+$lang['old_pass']     = 'Staré heslo';
+$lang['new_pass']     = 'Nové heslo';
+$lang['forgot_pass']  = 'Potvrdit heslo';
+$lang['register']     = 'Registrace';
+$lang['ban']          = 'Ven';
+$lang['profile']      = 'Profil';
+$lang['mail']         = 'E-mail';
+$lang['room']         = 'Místnost';
+$lang['rooms']        = 'Místnosti';
+$lang['online']       = 'Online';
+$lang['sound']        = 'Zvuk';
+$lang['smilies']      = 'Smajlíci';
+$lang['color']        = 'Barvy';
+$lang['turing']       = 'Kontrolní kód';
+$lang['verification'] = 'Verifikace';
+$lang['code']         = 'Kód';
+$lang['suffix']       = 'Přípona';
+$lang['timezone']     = 'Časové pásmo';
+$lang['time_format']  = 'Formát';
+$lang['age']          = 'Věk';
+$lang['fun']          = 'Fun';
+$lang['sex']          = 'Pohlaví';
+$lang['male']         = 'Muž';
+$lang['female']       = 'Žena';
+$lang['location']     = 'Bydliště';
+$lang['website']      = 'Webové stránky';
+$lang['info']         = 'Info';
+$lang['choose']       = 'Vyberte';
+$lang['upload']       = 'Upload';
+$lang['lang']         = 'Jazyk';
+$lang['user']         = 'Uživatel';
+$lang['users']        = 'Uživatelé';
+$lang['activation']   = 'Activace';
+$lang['header']       = 'Hlavička';
+$lang['footer']       = 'Patka';
+$lang['title']        = 'Název';
+$lang['join']         = 'Spojení';
+$lang['status']       = 'Status';
+$lang['active']       = 'Normal';
+$lang['inactive']     = 'Suspendován';
+$lang['unverified']   = 'Neověřen';
+$lang['order']        = 'Objednávka';
+$lang['no_results']   = 'Bez výsledku';
+$lang['integration']  = 'Integrace';
+$lang['history']      = 'Historie';
+$lang['badwords']     = 'Špatná slova';
+$lang['mail_tmpl']    = 'Mail šablona';
+$lang['backup']       = 'Zálohování [Uživatelé]';
+$lang['admin']        = 'Admin';
+$lang['moderator']    = 'Moderátor';
+$lang['settings']     = 'Nastavení';
+$lang['inf_pmssg']    = 'Info / Šepot';
+$lang['guest']        = 'Host';
+$lang['remember']     = 'Pamatovat si';
+$lang['6_hours']      = '6 hodin';
+$lang['a_day']        = '1 den';
+$lang['a_week']       = '1 týden';
+$lang['a_month']      = '1 měsíc';
+$lang['a_year']       = '1 rok';
+$lang['mass']         = 'Select mass actions here...';
+$lang['clear_ban']    = 'Zakázané IP adresy';
+$lang['ban_ip']       = 'Zakázat IP adresu';
+$lang['suspend_acc']  = 'Suspendovat účet';
+$lang['max_users']    = 'V místnosti je příliš mnoho lidí. Počkejte prosím chvilku a zkuste to znova.';
+$lang['open_new']     = 'Otevřít obrázek v novém okně';
+$lang['confirm']      = 'Prosím potvrďte tuto akci...';
+$lang['wrong']        = 'Špatný vstup';
+$lang['account_ok']   = 'Váš účet byl úspěšně aktivován.';
+$lang['check_inbox']  = 'Zkontrolujte Váš Inbox.';
+$lang['wait_app']     = 'Váš účet byl úspěšně vytvořen, ale ještě nebyl aktivován.. Administrátor ho nejprve musí schválit';
+$lang['all_req']      = 'Jsou požadována všechna pole!';
+$lang['you_banned']   = 'Byl jste zakázán!';
+$lang['headers_sent'] = 'Hlavička byla již odeslána.';
+$lang['wrong_turing'] = 'Incorrect acc. number.';
+$lang['mail_error']   = 'Chyba poštovního serveru.';
+$lang['action_ok']    = 'Požadovaná operace byla úspěšně dokončena.';
+$lang['continue']     = 'Klikem zde pokračuj...';
+$lang['revalidate']   = 'E-mail musí být potvrzen!';
+$lang['bwordsedit']   = 'Pro editaci seznamu  <i>badwords.txt</i> musí být CHMODed na 666.';
+$lang['upload_err']   = 'Chyba nahrávání. Pravděpodobně byla překročena maximální velikost souboru.';
+$lang['error_ip']     = 'Uživatel není on-line, toto je buď Vaše nebo zakázané IP.';
+$lang['error_usr']    = 'Tento účet neexistuje nebo je Váš vlastní či zakázaný.';
+$lang['error_bro']    = 'Váš prohlížeč není podporován! <br /><br /> Prosím vylepšete si prohlížeč na MSIE 5.0, Opera 8.5 nebo Mozilla 1.0.<br /> Poslední verze Safari a Konqueror jsou také podporovány.';
+$lang['error_nop']    = 'Nemáte povolení zobrazit požadovanou stránku.';
+$lang['error_lnk']    = 'Zdá se že jste se pokoušel otevřít spojení v novém okně. (toto není podporováno)';
+$lang['error_unk']    = '<b>Neznámá chyba!</b><br /><br />';
+$lang['sett1']        = 'Tisk \'guest\' uživatelské jméno/heslo pro přihlášení do systému. Change the password and turn this feature off to disallow guests.';
+$lang['sett2']        = 'Požadována aktivace e-mailem. [A] znamená, že noví uživatelé nemohou vstoupit do té doby, než jejich účty schválí administrátor.';
+$lang['sett3']        = 'Komprese je umožněna všem prohlížečům podporující tento CHAT. [A] všechny prohlížeče kromě MSIE.';
+$lang['sett4']        = 'Uživatelů v místnosti [MAX].';
+$lang['sett5']        = 'Maximální velikost souboru (obrázků) pro nahrání do stránek v kB. OFF je pro vypnutí nahrávání.';
+$lang['sett6']        = 'Kontrolní číselná ochrana proti automatizovaným útokům robotů.';
+$lang['sett7']        = 'Kontrolní číslo vyprší v ** minutách.';
+
+/* 3.1 update */
+
+$lang['disconnect']   = 'Byl jste odpojen(a).<br /><small>[Reason: žádná odezva ze serveru, žádost byla poslána 30 sekund předtím.]</small>';
+$lang['error_nan']    = 'Byl jste odpojen(a).<br /><small>[Reason: poslední serverová odezva byla ztracena (0 bytes).]</small>';
+
+/* 3.2 update */
+
+$lang['retype']       = 'Retype';
+$lang['suspend']      = 'Suspend';
+$lang['empty']        = 'Empty';
+$lang['empty_all']    = 'Empty all rooms';
+
+?>

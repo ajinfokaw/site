@@ -1,0 +1,13 @@
+ext_name                    : ext1file      : ext2file    : ext1cook            : ext2cook         : ext1tble      : ext2tble
+phpBB                       : e1phpbb.php   : e2phpbb.php : phpbb2mysql_data    :                  : phpbb_users   : phpbb_sessions_keys
+vBulletin                   : e1vbltn.php   : e2vbltn.php : bbuserid            : bbpassword       : user          : userfield
+Invision Power Board  1     : e1ipb1x.php   : e2ipb1x.php : member_id           : pass_hash        : ibf_members   :
+Invision Power Board  2     : e1ipb2x.php   : e2ipb2x.php : member_id           : pass_hash        : ibf_members   : ibf_member_extra
+Simple Machines             : e1smach.php   : e2smach.php : SMFCookie10         :                  : smf_members   :
+e107                        : e1ee107.php   : e2ee107.php : e107cookie          :                  : e107_user     :
+exoops                      : e1xoops.php   : e2xoops.php : exoops_session      :                  : e_xoops_users : e_xoops_session
+Mambo                       : e1mambo.php   : e2mambo.php : usercookie          :                  : mos_users     :
+phpNuke                     : e1ppnuk.php   : e2ppnuk.php : user                :                  : nuke_users    :
+postNuke                    : e1pstnk.php   : e2pstnk.php : POSTNUKESID         :                  : pn_users      : pn_session_info
+Woltlab Burning Board       : e1wbb2.php    : e2wbb2.php  : wbb_userid          : wbb_userpassword : bb1_users     :
+PunBB                       : e1punbb.php   : e2punbb.php : punbb_cookie        :                  : punbb_users   :

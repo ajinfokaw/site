@@ -1,0 +1,188 @@
+<?php
+require_once 'config.php';
+require_once 'incl/main.inc';
+
+/* --- */
+
+include 'incl/open_doc.inc';
+?>
+<div style="width:95%;text-align:center;margin:5px">
+<script type="text/javascript">document.body.style.overflow='auto';</script>
+<div style="width:320px;margin:auto">
+
+<?php
+if(isset($from)){$from=(int)$from;}else{$from=0;}
+
+$prt1=$from+1;$next=$from+5;$prt2=$next;
+if($from<5){$prev=0;}else{$prev=$from-5;}
+
+$where_clause='usr_id IS NOT NULL';
+
+if(isset($src)){$src=trim($src);}else{$src='';}
+if(strlen($src)>2){$src=output($src,2);
+$src2db=neutral_escape($src,32,'str');}
+else{$src='';$src2db='';}
+
+if(strlen($src2db)>2){
+$where_clause.=" AND (usr_name LIKE ('%$src2db%') OR usr_location LIKE ('%$src2db%') OR usr_info LIKE ('%$src2db%'))";}
+
+if(isset($age)){
+$age=(int)$age;$cyear=gmdate('Y',time());
+switch($age){
+case 1:$pp2=$cyear-12;$pp1=$cyear-20;$where_clause.=" AND usr_age BETWEEN $pp1 AND $pp2";break;
+case 2:$pp2=$cyear-20;$pp1=$cyear-30;$where_clause.=" AND usr_age BETWEEN $pp1 AND $pp2";break;
+case 3:$pp2=$cyear-30;$pp1=$cyear-40;$where_clause.=" AND usr_age BETWEEN $pp1 AND $pp2";break;
+case 4:$pp2=$cyear-40;$pp1=$cyear-50;$where_clause.=" AND usr_age BETWEEN $pp1 AND $pp2";break;
+case 5:$pp2=$cyear-50;$pp1=$cyear-60;$where_clause.=" AND usr_age BETWEEN $pp1 AND $pp2";break;
+case 6:$pp2=$cyear-60;$pp1=$cyear-99;$where_clause.=" AND usr_age BETWEEN $pp1 AND $pp2";break;
+default:$where_clause.='';break;}}
+
+if(isset($sex)){
+$sex=(int)$sex;
+switch($sex){
+case 1:$where_clause.=" AND usr_sex=1";break;
+case 2:$where_clause.=" AND usr_sex=2";break;
+default:$where_clause.='';break;}}
+
+$query='SELECT * FROM '.$prefix."_users WHERE $where_clause LIMIT 5 OFFSET $from";
+$result=neutral_query($query);
+
+$prtS='';
+if(neutral_num_rows($result)>0){
+$query='SELECT count(*) FROM '.$prefix."_users WHERE $where_clause";
+$rows=neutral_query($query);$rows=neutral_fetch_array($rows);$rows=(int)$rows[0];
+
+if($prt2>$rows){$prt2=$rows;}
+$prtS=$prt1.'-'.$prt2.' ['.$rows.']';}
+
+
+
+?>
+<form id="fms" action="users.php" method="post" style="margin:0px;padding:0px">
+
+<div class="d" style="padding:1px"><div class="b">
+<div class="s" style="float:right"><?php print $prtS;?></div>
+<div style="float:left" class="u"><?php print $lang['users'];?></div>
+<br style="clear:both" />
+</div></div>
+
+<table style="width:100%" cellspacing="0">
+<tr><td class="s" colspan="4">&nbsp;</td></tr>
+<tr><td class="s">
+<input type="text" class="s" style="width:80px" name="src" value="<?php print $src;?>" />
+<input type="hidden" name="from" value="<?php print $from;?>" /></td>
+
+<td class="s">
+<select class="s" style="width:80px" name="sex">
+<?php
+print '<option value="0">'.$lang['sex'].'</option>';
+if(isset($sex)&&$sex=='1'){$sel=' selected="selected"';}else{$sel='';}
+print '<option value="1"'.$sel.'>'.$lang['male'].'</option>';
+if(isset($sex)&&$sex=='2'){$sel=' selected="selected"';}else{$sel='';}
+print '<option value="2"'.$sel.'>'.$lang['female'].'</option>';
+?>
+</select></td>
+
+<td class="s">
+<select class="s" style="width:80px" name="age">
+<?php
+print '<option value="0">'.$lang['age'].'</option>';
+if(isset($age)&&$age=='1'){$sel=' selected="selected"';}else{$sel='';}
+print '<option value="1"'.$sel.'>12-20</option>';
+if(isset($age)&&$age=='2'){$sel=' selected="selected"';}else{$sel='';}
+print '<option value="2"'.$sel.'>20-30</option>';
+if(isset($age)&&$age=='3'){$sel=' selected="selected"';}else{$sel='';}
+print '<option value="3"'.$sel.'>30-40</option>';
+if(isset($age)&&$age=='4'){$sel=' selected="selected"';}else{$sel='';}
+print '<option value="4"'.$sel.'>40-50</option>';
+if(isset($age)&&$age=='5'){$sel=' selected="selected"';}else{$sel='';}
+print '<option value="5"'.$sel.'>50-60</option>';
+if(isset($age)&&$age=='6'){$sel=' selected="selected"';}else{$sel='';}
+print '<option value="6"'.$sel.'>60-&gt;</option>';
+?>
+</select></td>
+
+
+<td class="s" style="text-align:right"><input class="s" type="submit" value="<?php print $lang['ok'];?>" onclick="document.forms.fms.from.value=0" /></td>
+</tr></table>
+
+<?php
+$mdd='<b>&middot;</b> ';
+$no_results='<div class="s">&nbsp;</div><div class="d" style="padding:1px"><div class="c"><div class="s" style="padding:15px">'.$lang['no_results'].'</div></div></div>';
+
+while($user=neutral_fetch_array($result)){
+$usr_id=output($user['usr_id'],2);
+$usr_id=(int)$usr_id;
+
+$details='';
+
+$avtr=output($user['usr_avatar'],2);
+if(strlen($avtr)<5){$avtr='incl/no_pic.png';
+$details.='<img src="'.$avtr.'" class="i" style="float:right;padding:1px;border:1px solid;width:80px;height:80px" alt="" />';}
+else{$details.='<img src="'.$avtr.'" class="i" onclick="window.open(this.src)" style="float:right;padding:1px;border:1px solid;width:80px;height:80px" alt="'.$lang['open_new'].'" title="'.$lang['open_new'].'" />';}
+
+$name=output($user['usr_name'],2);
+
+$mod=output($user['usr_mod'],2);
+if($user['usr_id']=='1'){$mod=' ['.$lang['admin'].']';}
+elseif($mod=='1'){$mod=' ['.$lang['moderator'].']';}else{$mod='';}
+
+$details.='<b>'.$name.'</b>'.$mod.'<br /><br />';
+
+$sex=(int)$user['usr_sex'];
+switch($sex){
+case 1:$details.=$mdd.$lang['sex'].': '.$lang['male'].'<br />';break;
+case 2:$details.=$mdd.$lang['sex'].': '.$lang['female'].'<br />';break;}
+
+$age=(int)$user['usr_age'];
+$cyear=gmdate('Y',time());$age=$cyear-$age;
+if($age<100&&$age>11){$details.=$mdd.$lang['age'].': '.$age.'<br />';}
+
+
+$tme=show_time($user['usr_join_date'],0,'Y-n-d');
+$details.=$mdd.$lang['join'].': '.$tme.'<br />';
+
+$zone=(int)$user['usr_offset'];
+$details.=$mdd.$lang['timezone'].': GMT';
+if($zone>0){$details.='+';}
+if($zone!=0){$details.=$zone;}
+$details.='<br />';
+
+$loc=output($user['usr_location'],2);
+if(strlen($loc)>0){$details.=$mdd.$lang['location'].': '.$loc.'<br />';}
+
+$site=output($user['usr_website'],2);
+if(strlen($site)>0){$details.=$mdd.$lang['website'].': <a style="text-decoration:none;font-weight:bold" href="info.php?reason=link" onclick="site=\''.$site.'\';window.open(site);return false">&raquo;&raquo;</a><br />';}
+
+$details.='<br style="clear:both" /><br />';
+
+
+$info=output($user['usr_info'],2);
+if(strlen($info)>0){$details.=$info.'<br /><br />';}
+
+print '<div class="s">&nbsp;</div><div class="d" style="padding:1px"><div class="c"><div class="s" style="padding:15px">';
+print $details;
+print '</div></div></div>';
+$no_results='';
+}
+print $no_results;
+?>
+
+</form>
+<div class="s" style="float:right"><?php print $prtS;?></div>
+<div class="s" style="float:left"><b>
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=<?php print $prev;?>;f.submit();return false" style="text-decoration:none">&laquo;</a> 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=0;f.submit();return false" style="text-decoration:none">1</a> &middot; 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=5;f.submit();return false" style="text-decoration:none">2</a> &middot; 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=10;f.submit();return false" style="text-decoration:none">3</a> &middot; 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=15;f.submit();return false" style="text-decoration:none">4</a> &middot; 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=20;f.submit();return false" style="text-decoration:none">5</a> &middot; 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=25;f.submit();return false" style="text-decoration:none">6</a> &middot; 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=30;f.submit();return false" style="text-decoration:none">7</a> &middot; 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=35;f.submit();return false" style="text-decoration:none">8</a> &middot; 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=40;f.submit();return false" style="text-decoration:none">9</a> &middot; 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=45;f.submit();return false" style="text-decoration:none">10</a> 
+<a href="info.php?reason=link" onclick="f=document.forms.fms;f.from.value=<?php print $next;?>;f.submit();return false" style="text-decoration:none">&raquo;</a>
+</b></div>
+
+</div></div></body></html>

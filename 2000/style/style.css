@@ -1,0 +1,40 @@
+#footer  {font-size:10px; color:#000000;}
+#footer a{background:url(../images/pimp1.gif) no-repeat left; padding-left:19px; padding-right:19px; font-weight:bold; font-size:10px; color:#000000; text-decoration:none;}
+#footer a:hover{text-decoration:none; color:#FFA600;}
+
+#footer b a{background:none; padding-left:0; font-weight:bold;  padding-right:19px; font-size:10px; color:#000000; text-decoration:none;}
+#footer b a:hover{text-decoration:none; color:#FFA600;}
+
+#footer span a{background:none; padding-left:0; font-weight:normal;  padding-right:0; font-size:10px; color:#000000; text-decoration:none;}
+#footer span a:hover{text-decoration:underline; color:#000000;}
+
+
+
+FONT		{font:11px/12px Tahoma, Arial, Helvetica, sans-serif; color:#727272;}
+
+*{margin:0; padding:0;}
+body {margin:0; padding:0; vertical-align:top; text-align:center;background:url(../images/talling.gif) repeat-x top left #5194B3; }
+td {font-size:11px; font-family:Tahoma; color:#000000; line-height:14px; vertical-align:top; padding:0;}
+table {border:0; border-collapse:collapse;}
+table{width:100%;}
+img {border:0;}
+
+P		{font:11px/12px Tahoma, Arial, Helvetica, sans-serif; color:#727272;}
+DIV		{font:11px/12px Tahoma, Arial, Helvetica, sans-serif; color:#727272; padding:0; margin:0;  background:#FFFFFF;}
+INPUT		{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 11px}
+TEXTAREA	{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 11px}
+FORM 		{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 11px}
+a {border:none; text-decoration:underline; color:#ff0000;}
+a:hover {text-decoration:none;}
+
+.title 		{BACKGROUND: none; COLOR: #333333; FONT-SIZE: 13px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.content 	{ background:none; COLOR: #727272; FONT-SIZE: 11px; FONT-FAMILY:Tahoma, Verdana, Helvetica}
+.storytitle 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.storycat	{BACKGROUND: none; COLOR: #2B2B2B; FONT-SIZE: 13px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline}
+.boxtitle 	{BACKGROUND: #FFFF00; COLOR:#FF0000; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.boxcontent 	{ background:#FFFFFF; COLOR: #727272; FONT-SIZE: 11px; line-height:13px; FONT-FAMILY:Tahoma, Verdana, Helvetica}
+.option 	{BACKGROUND: none; COLOR: #2B2B2B;  FONT-SIZE: 13px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.tiny		{BACKGROUND: none; COLOR: #2B2B2B; FONT-SIZE: 11px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.footmsg        {BACKGROUND: none; COLOR: #727272; FONT-SIZE: 8px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.footmsg_l	{BACKGROUND: none; COLOR: #727272; FONT-SIZE: 9px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline}
+.box		{FONT-FAMILY:Tahoma, Verdana,Helvetica; FONT-SIZE: 11px; line-height:13px; border: 1px solid #ff0000; background-color: #A6B0BC}
